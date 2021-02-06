@@ -40,6 +40,7 @@ $(document).ready(function () {
 						var usertipe = data['usertipe'];
 						var peer = data['peer'];
 						var mitraid = data['mitraid'];
+						var waktu = data['waktu'];
 
 						localStorage.login = "true";
 						localStorage.email = email;
@@ -49,6 +50,7 @@ $(document).ready(function () {
 						localStorage.usertipe = usertipe;
 						localStorage.peer = peer;
 						localStorage.mitraid = mitraid;
+						localStorage.waktu = waktu;
 
 						slide("index.html");
 

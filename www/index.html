@@ -156,6 +156,10 @@
               cache: false,
               success: function (data) {
                 if (data['status'] == "OK") {
+                  let waktu_refresh = data['waktu_refresh'];
+                  setTimeout(function () {
+                    window.location.href = "index.html";
+                  }, waktu_refresh);
                   var online = data['online'];
                   //var dayon = data['dayon'];
                   var show = data['show'];
@@ -249,11 +253,8 @@
         </div>
       </div>
       <script>
-        $(document).ready(function () {
-          setTimeout(function () {
-            window.location.href = "index.html";
-          }, 60000);
-        });
+        let waktuHabis = localStorage.waktu;
+
         function refreshx() {
           window.location.href = "index.html";
         }
