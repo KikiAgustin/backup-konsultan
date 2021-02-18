@@ -197,7 +197,7 @@
       </div>
       <div class="menuhomebox animated fadein m-t-10 m-b-50" style="padding-top:0px;">
 
-        <div class="menuhome" style="margin-top: 0px;min-height:150px">
+        <div class="menuhome" style="margin-top: 0px;min-height:70px">
           <h3>Chat Konsultasi Konfirmasi</h3>
           <div class="listkonsultan0">
             <div id="load_data0"></div>
@@ -209,20 +209,6 @@
             </div>
           </div>
         </div>
-
-        <div class="menuhome" style="margin-top: 20px;min-height:150px">
-          <h3>Chat Tidak Terjawab</h3>
-          <div class="listkonsultan3">
-            <div id="load_data3"></div>
-            <div id="load_data_message3">
-              <!-- <div class="loading"> -->
-              <!-- <center><img src="img/loading.svg" /><br><b>Mohon menunggu</b><br>sedang menyiapkan daftar <br>chat
-                  terbaru</center> -->
-              <!-- </div> -->
-            </div>
-          </div>
-        </div>
-
 
 
         <div class="menuhome" style="margin-top: 20px;">
@@ -251,6 +237,20 @@
             </div>
           </div>
         </div>
+
+        <div class="menuhome" style="margin-top: 20px;min-height:150px">
+          <h3>Chat Tidak Terjawab</h3>
+          <div class="listkonsultan3">
+            <div id="load_data3"></div>
+            <div id="load_data_message3">
+              <!-- <div class="loading"> -->
+              <!-- <center><img src="img/loading.svg" /><br><b>Mohon menunggu</b><br>sedang menyiapkan daftar <br>chat
+                  terbaru</center> -->
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+
       </div>
       <script>
         let waktuHabis = localStorage.waktu;
@@ -309,7 +309,7 @@
             }
           });
 
-          var urls = "https://www.dfunstation.com/api4/consultant/index.php/konsultasi/chat-konsultan/" + localStorage.userid + "/0/3/0/normal/?callback=?";
+          var urls = "https://www.dfunstation.com/api4/consultant/index.php/konsultasi/chat-konsultan/" + localStorage.userid + "/0/2/0/normal/?callback=?";
           $.ajax({
             type: "POST",
             url: urls,
